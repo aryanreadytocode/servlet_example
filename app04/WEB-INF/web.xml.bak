@@ -1,0 +1,33 @@
+<web-app>
+	<display-name>My Context Application</display-name>
+
+	<context-param>
+		<context-name>driverClass</context-name>
+		<context-value>oracle.jdbc.OracleDriver</context-value>
+	</context-param>
+
+	<context-param>
+		<context-name>url</context-name>
+		<context-value>jdbc:oracle:thin:@localhost:1521:xe</context-value>
+	</context-param>
+
+	<context-param>
+		<context-name>username</context-name>
+		<context-value>aryan</context-value>
+	</context-param>
+
+	<context-param>
+		<context-name>password</context-name>
+		<context-value>password</context-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>contextServlet</servlet-name>
+		<servlet-class>ContextServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>contextServlet</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+</web-app>

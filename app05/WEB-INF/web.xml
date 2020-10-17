@@ -1,0 +1,57 @@
+<web-app>
+	<context-param>
+		<param-name>a</param-name>
+		<param-value>AAA</param-value>
+	</context-param>
+	<context-param>
+		<param-name>b</param-name>
+		<param-value>BBB</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>firstName</servlet-name>
+		<servlet-class>FirstName</servlet-class>
+
+		<init-param>
+			<param-name>c</param-name>
+			<param-value>CCC</param-value>
+		<init-param>
+
+		</init-param>
+			<param-name>d</param-name>
+			<param-value>DDD</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>firstName</servlet-name>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+
+		<servlet-name>secondName</servlet-name>
+		<servlet-class>SecondName</servlet-class>
+
+		<init-param>
+			<param-name>e</param-name>
+			<param-value>EEE</param-value>
+		<init-param>
+
+		</init-param>
+			<param-name>f</param-name>
+			<param-value>FFF</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>secondName</servlet-name>
+		<url-pattern>/second</url-pattern>
+	</servlet-mapping>
+
+
+	
+
+
+</web-app>

@@ -1,0 +1,22 @@
+import javax.servlet.*;
+import java.io.*;
+public class FirstServlet extends GenericServlet{
+	public void service(ServletRequest req, ServletRespose res) throws ServletException, IOException{
+		respose.setContentType("html/text");
+		PrintWriter out = res.getWriter();
+		ServletConfig config = getServletConfig();
+		ServletContext context = getServletContext();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<h2>");
+		out.println("a-->"+context.getInitParam("a")+"<br>");
+		out.println("b-->"+context.getInitParam("b")+"<br>");
+		out.println("c-->"+context.getInitParam("c")+"<br>");
+		out.println("d-->"+context.getInitParam("d")+"<br>");
+		out.println("e-->"+context.getInitParam("e")+"<br>");
+		out.println("f-->"+context.getInitParam("f")+"<br>");
+		out.println("<h2><body><html>");
+
+	} 
+} 
+

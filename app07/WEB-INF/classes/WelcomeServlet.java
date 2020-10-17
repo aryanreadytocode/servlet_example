@@ -1,0 +1,15 @@
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+public class WelcomeServlet extends HttpServlet{
+	public void doGet(HttpServletRequest hreq, HttpServletResponse hres) throws ServletException, IOException{
+		hres.setContentType("text/html");
+		PrintWriter out = hres.getWriter();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<h2>Welcome Aryan");
+		out.println("<hr><body><html>");
+
+	}
+} 
